@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="نعيمة، المعرض الشخصي للفنان وسام راضي في بيت التحفيات - بغداد، 2026.">
+  <title>نعيمة | وسام راضي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Arabic:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="brochure" aria-label="بروشور معرض نعيمة">
+    <section class="hero" aria-label="افتتاح المعرض">
+      <img class="hero__image" src="assets/images/hero.jpg" alt="عمل فني من المعرض" decoding="async">
+
+      <div class="hero__content">
+        <div class="hero__topline">المعرض الشخصي للفنان</div>
+        <p class="hero__artist">وسام راضي</p>
+
+        <div class="hero__title-group">
+          <span class="hero__rule" aria-hidden="true"></span>
+          <p class="hero__subtitle">وجوه من الذاكرة<br>والأنوثة الشعبية</p>
+        </div>
+
+        <div class="hero__bottom">
+          <p>بيت التحفيات</p>
+          <p>بغداد — 2026</p>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <section class="artist-section" id="artist" aria-labelledby="artist-title">
+      <div class="artist-section__inner">
+        <div class="artist-copy">
+          <div class="artist-kicker reveal reveal-delay-1" aria-label="القسم الأول: الفنان">
+            <span>01</span>
+            <span>الفنان</span>
+          </div>
+
+          <h2 class="artist-title reveal reveal-delay-2" id="artist-title">وسام راضي</h2>
+          <p class="artist-role reveal reveal-delay-3">الفنان التشكيلي والكاريكاتيري</p>
+          <span class="artist-line reveal reveal-delay-3" aria-hidden="true"></span>
+
+          <div class="artist-bio">
+            <p class="reveal reveal-delay-4">وسام راضي فنان تشكيلي وكاريكاتيري عراقي، ولد في بغداد عام 1968. عمل في مجالات الرسم التشكيلي والكاريكاتير والصحافة الفنية، وشارك في معارض داخل العراق وخارجه، كما حصد جوائز وتكريمات في مجال الرسم والكاريكاتير.</p>
+            <p class="reveal reveal-delay-5">تتمحور تجربته حول الإنسان والذاكرة والوجوه الشعبية، بأسلوب تعبيري يحمل ملامح عراقية واضحة. في معرض «نعيمة» يقدم الفنان رؤيته الخاصة للمرأة الشعبية كرمز للجمال والذاكرة والأنوثة العراقية.</p>
+          </div>
+        </div>
+
+        <figure class="artist-image-wrap reveal reveal-image reveal-delay-6">
+          <img src="assets/images/wissam-radi.jpg" alt="صورة الفنان وسام راضي" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <section class="artworks-section" id="artworks" aria-labelledby="artworks-title">
+      <div class="artworks-section__inner">
+        <header class="artworks-header reveal-on-scroll">
+          <div class="artworks-kicker" aria-label="القسم الثاني: الأعمال">
+            <span>02</span>
+            <span>الأعمال</span>
+          </div>
+          <h2 class="artworks-title" id="artworks-title">أعمال نعيمة</h2>
+          <p class="artworks-subtitle">مختارات من أعمال الفنان وسام راضي</p>
+        </header>
+
+        <div class="artworks-slider reveal-on-scroll" aria-label="مختارات من أعمال نعيمة">
+          <div class="artworks-viewport" id="artworksViewport">
+            <div class="artworks-track" id="artworksTrack"></div>
+          </div>
+
+          <div class="artworks-controls" aria-label="أدوات تصفح الأعمال">
+            <button class="artworks-button" type="button" id="prevArtwork" aria-label="العمل السابق">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15 6l-6 6 6 6" />
+              </svg>
+            </button>
+            <div class="artworks-progress" aria-hidden="true">
+              <span id="artworksProgress"></span>
+            </div>
+            <button class="artworks-button" type="button" id="nextArtwork" aria-label="العمل التالي">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="artwork-details" aria-live="polite">
+            <div class="artwork-counter" id="artworkCounter">01 / 04</div>
+            <h3 class="artwork-title" id="artworkTitle"></h3>
+            <p class="artwork-description" id="artworkDescription"></p>
+            <p class="artwork-meta" id="artworkMeta"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="house-section" id="house" aria-labelledby="house-title">
+      <figure class="house-image-wrap reveal reveal-image">
+        <img src="assets/images/house-of-antiques.jpg" alt="بيت التحفيات في بغداد" loading="lazy" decoding="async">
+      </figure>
+
+      <div class="house-content">
+        <header class="house-header">
+          <div class="house-kicker reveal reveal-delay-1" aria-label="القسم الثالث: المكان">
+            <span>03</span>
+            <span>المكان</span>
+          </div>
+          <h2 class="house-title reveal reveal-delay-2" id="house-title">
+            <span>بيت التحفيات</span>
+            <span>ذاكرة المكان</span>
+          </h2>
+        </header>
+
+        <div class="house-text">
+          <p class="reveal reveal-delay-3">داخل بيت التحفيات، لا تُعرض الأعمال الفنية بوصفها لوحات منفصلة عن محيطها، بل كجزء من ذاكرة مكان حي، يحمل بين جدرانه تفاصيل من التراث، الحكاية، والذائقة العراقية القديمة.</p>
+          <p class="reveal reveal-delay-4">يمنح بيت التحفيات معرض «نعيمة» فضاءً مختلفاً؛ فالأعمال لا تقف أمام جدار أبيض محايد، بل تتحاور مع الخشب، النحاس، السجاد، الضوء، والتحف التي تحمل أثر الزمن.</p>
+          <p class="reveal reveal-delay-5">هذا التداخل بين العمل الفني والمكان يخلق تجربة بصرية أقرب إلى المشهد المسرحي، حيث تتحول الشخصيات المرسومة إلى جزء من البيت، وكأنها خرجت من ذاكرته.</p>
+          <p class="reveal reveal-delay-6">اختيار بيت التحفيات لاحتضان هذا المعرض امتداد لفكرة المعرض نفسها:</p>
+        </div>
+
+        <blockquote class="house-quote reveal reveal-delay-7">
+          وجوه من الذاكرة،<br>
+          وأنوثة شعبية تجد مكانها الطبيعي وسط فضاء يحفظ ملامح الماضي.
+        </blockquote>
+
+        <p class="house-meta reveal reveal-delay-8">بيت التحفيات<br>بغداد — أبو نؤاس</p>
+      </div>
+    </section>
+    <figure class="closing-image reveal reveal-image">
+      <img src="assets/images/closing.jpg" alt="الصورة الختامية لمعرض نعيمة" loading="lazy" decoding="async">
+    </figure>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-section__inner">
+        <header class="contact-header reveal-on-scroll">
+          <div class="contact-kicker" aria-label="القسم الرابع: تواصل">
+            <span>04</span>
+            <span>تواصل</span>
+          </div>
+          <h2 class="contact-title" id="contact-title">وسام راضي</h2>
+          <p class="contact-role">الفنان التشكيلي</p>
+        </header>
+
+        <a class="artist-website reveal reveal-delay-1" id="artistWebsiteLink" href="https://www.wissamradih.com" target="_blank" rel="noopener noreferrer" aria-label="موقع وسام راضي">www.wissamradih.com</a>
+
+        <div class="contact-icons reveal reveal-delay-2" aria-label="روابط التواصل مع وسام راضي">
+          <a class="contact-icon" id="artistWhatsappLink" href="#" aria-label="واتساب وسام راضي">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M19.05 4.91A9.74 9.74 0 0 0 3.78 16.66L3 21l4.45-.74A9.72 9.72 0 0 0 12 21a9.72 9.72 0 0 0 7.05-16.09Z" />
+              <path d="M8.9 8.55c.22-.48.45-.49.66-.49h.48c.16 0 .38.06.58.32.2.27.76.93.76 2.25 0 1.33-.78 2.62-.89 2.8-.11.18-1.53 2.38-3.78 3.24-.52.2-.93.32-1.25.41-.52.16-.99.14-1.36.08-.42-.06-1.29-.52-1.47-1.03-.18-.5-.18-.94-.13-1.03.05-.09.2-.15.42-.27.22-.11 1.29-.64 1.49-.71.2-.07.34-.11.49.11.15.22.56.71.69.86.13.15.25.16.47.05.22-.11.92-.34 1.75-1.08.65-.58 1.09-1.29 1.22-1.51.13-.22.01-.34-.1-.45-.1-.1-.22-.25-.33-.38-.11-.13-.15-.22-.22-.37-.07-.15-.04-.29.02-.4.06-.11.49-1.18.68-1.61Z" />
+            </svg>
+          </a>
+          <a class="contact-icon" id="artistInstagramLink" href="#" aria-label="إنستغرام وسام راضي">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="4" y="4" width="16" height="16" rx="4" />
+              <circle cx="12" cy="12" r="3.6" />
+              <circle cx="16.9" cy="7.1" r="0.8" />
+            </svg>
+          </a>
+          <a class="contact-icon" id="artistPhoneLink" href="#" aria-label="الاتصال بوسام راضي">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7.2 4.8 9.1 4c.55-.23 1.18.02 1.43.56l1.08 2.38c.22.49.08 1.06-.34 1.4l-1.1.88a10.4 10.4 0 0 0 4.61 4.61l.88-1.1c.34-.42.91-.56 1.4-.34l2.38 1.08c.54.25.79.88.56 1.43l-.8 1.9c-.28.66-.96 1.05-1.67.96C10.61 16.9 7.1 13.39 6.24 6.47c-.09-.71.3-1.39.96-1.67Z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="credits-block">
+          <div class="credits-divider" aria-hidden="true"></div>
+          <div class="credits-grid">
+            <a class="credit-item reveal reveal-delay-3" href="https://www.houseof-antiques.com/" target="_blank" rel="noopener noreferrer" aria-label="موقع بيت التحفيات"><img src="assets/images/house-logo.png" alt="شعار بيت التحفيات" loading="lazy" decoding="async"><h3>بيت التحفيات</h3><p>المكان المستضيف للمعرض</p></a>
+            <a class="credit-item reveal reveal-delay-4" href="https://www.abaad-aliraq.com/" target="_blank" rel="noopener noreferrer" aria-label="موقع أبعاد العراق"><img src="assets/images/abaad-logo.png" alt="شعار أبعاد العراق" loading="lazy" decoding="async"><h3>أبعاد العراق</h3><p>الجهة المؤسسة والمنظمة للمعرض</p></a>
+          </div>
+        </div>
+
+        <p class="final-signature reveal reveal-delay-5">معرض «نعيمة»<br>وسام راضي<br>بغداد — 2026</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
